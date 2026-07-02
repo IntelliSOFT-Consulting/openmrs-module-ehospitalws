@@ -12,8 +12,8 @@ import org.openmrs.module.webservices.rest.web.RestConstants;
 import org.openmrs.module.webservices.rest.web.annotation.Resource;
 import org.openmrs.module.webservices.rest.web.v1_0.resource.openmrs2_2.OrderResource2_2;
 
-@Resource(name = RestConstants.VERSION_2 + "/order", supportedClass = Order.class, supportedOpenmrsVersions = {
-        "2.6.* - 9.*" })
+@Resource(name = RestConstants.VERSION_1 + "/order", supportedClass = Order.class, supportedOpenmrsVersions = {
+        "2.6.* - 9.*" }, order = 1)
 public class OrderResource2_3 extends OrderResource2_2 {
 	
 	private String PROCEDURE_ORDER_TYPE_UUID = "4237a01f-29c5-4167-9d8e-96d6e590aa33";
